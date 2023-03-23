@@ -1,0 +1,28 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  Build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [ 16 ]
+        integration-deps:
+          - "" # as defined in package.json
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Install dependencies for integration test
+        if: ${{ matrix.integration-deps != '' }}
+        run: npm install ${{ matrix.integration-deps }}
+      - name: Build
+        run: npm run all
