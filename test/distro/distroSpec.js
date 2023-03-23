@@ -1,16 +1,16 @@
 describe('distro', function() {
 
   it('should expose CJS bundle', function() {
-    const DiagramJSMinimap = require('../..');
+    const DiagramJsGrid = require('../..');
 
-    expect(DiagramJSMinimap).to.exist;
+    expect(DiagramJsGrid).to.exist;
   });
 
 
   it('should expose UMD bundle', function() {
-    const DiagramJSMinimap = require('../../dist/diagram-minimap.umd.js');
+    const DiagramJsGrid = require('../../dist/diagram-grid.umd.js');
 
-    expect(DiagramJSMinimap).to.exist;
+    expect(DiagramJsGrid).to.exist;
   });
 
 });
