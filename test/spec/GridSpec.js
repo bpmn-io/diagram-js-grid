@@ -290,10 +290,33 @@ describe('grid', function() {
 
   describe('viewer', function() {
 
+    (singleStart === 'viewer' ? it.only : it)('should be hidden by default', function() {
+
+      // given
+      basicSetup({
+        modules: [
+          gridModule,
+          moveCanvasModule,
+          zoomScrollModule
+        ]
+      }, this);
+
+      var grid = getDiagramJS().get('grid'),
+          gfx = grid._getParent();
+
+      // assume
+      expect(grid.isVisible()).to.be.false;
+      expect(gfx.childNodes).to.be.empty;
+
+      // when
+      grid.toggle(true);
+
+      // then
+      expect(grid.isVisible()).to.be.true;
+      expect(gfx.childNodes).to.have.length(1);
+    });
+
   });
-
-
-
 
 });
 
