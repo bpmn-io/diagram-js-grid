@@ -54,7 +54,7 @@ describe('grid', function() {
       var grid = getDiagramJS().get('grid'),
           gfx = grid._getParent();
 
-      expect(grid._isVisible()).to.be.true;
+      expect(grid.isVisible()).to.be.true;
       expect(gfx.childNodes).to.have.length(1);
     });
 
@@ -78,8 +78,8 @@ describe('grid', function() {
       var grid = getDiagramJS().get('grid'),
           gfx = grid._getParent();
 
-      expect(grid._isVisible()).to.be.false;
-      expect(gfx.childNodes).to.have.length(0);
+      expect(grid.isVisible()).to.be.false;
+      expect(gfx.childNodes).to.be.empty;
     });
 
 
@@ -104,7 +104,7 @@ describe('grid', function() {
       var grid = getDiagramJS().get('grid'),
           gfx = grid._getParent();
 
-      expect(grid._isVisible()).to.be.false;
+      expect(grid.isVisible()).to.be.false;
       expect(gfx.childNodes).to.be.empty;
     });
 
@@ -133,7 +133,7 @@ describe('grid', function() {
       var grid = getDiagramJS().get('grid'),
           gfx = grid._getParent();
 
-      expect(grid._isVisible()).to.be.true;
+      expect(grid.isVisible()).to.be.true;
       expect(gfx.childNodes).to.have.length(1);
     });
 
@@ -222,28 +222,28 @@ describe('grid', function() {
       }));
 
 
-      it('#_isVisible', inject(function(grid) {
+      it('#isVisible', inject(function(grid) {
 
         // assume
-        expect(grid._isVisible()).to.be.true;
+        expect(grid.isVisible()).to.be.true;
 
         // when
-        grid._setVisible(false);
+        grid.toggle(false);
 
         // then
-        expect(grid._isVisible()).to.be.false;
+        expect(grid.isVisible()).to.be.false;
       }));
 
 
-      it('#_setVisible', inject(function(grid) {
+      it('#toggle', inject(function(grid) {
 
         // when
-        grid._setVisible(false);
+        grid.toggle(false);
 
         // then
         var gfx = grid._getParent();
 
-        expect(grid._isVisible()).to.be.false;
+        expect(grid.isVisible()).to.be.false;
         expect(gfx.childNodes).to.be.empty;
       }));
 
@@ -268,19 +268,19 @@ describe('grid', function() {
       it('should update with gridSnapping', inject(function(grid, gridSnapping) {
 
         // assume
-        expect(grid._isVisible()).to.be.true;
+        expect(grid.isVisible()).to.be.true;
 
         // given
         gridSnapping.setActive(true);
 
         // then
-        expect(grid._isVisible()).to.be.true;
+        expect(grid.isVisible()).to.be.true;
 
         // when
         gridSnapping.setActive(false);
 
         // then
-        expect(grid._isVisible()).to.be.false;
+        expect(grid.isVisible()).to.be.false;
       }));
 
     });
