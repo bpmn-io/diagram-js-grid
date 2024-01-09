@@ -19,7 +19,7 @@ import zoomScrollModule from 'diagram-js/lib/navigation/zoomscroll';
 
 import { getMid } from 'diagram-js/lib/layout/LayoutUtil';
 
-import { GRID_DIMENSIONS } from 'diagram-js/lib/features/grid-snapping/visuals/Grid';
+import { GRID_DIMENSIONS } from '../../lib/Grid';
 
 import { SPACING } from 'diagram-js/lib/features/grid-snapping/GridUtil';
 
