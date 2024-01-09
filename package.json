@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "min-dash": "^4.0.0",
-    "tiny-svg": "^3.0.0"
+    "tiny-svg": "^3.0.1"
   },
   "files": [
     "dist"
