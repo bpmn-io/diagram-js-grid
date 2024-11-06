@@ -6,6 +6,10 @@ All notable changes to [diagram-js-grid](https://github.com/bpmn-io/diagram-js-g
 
 ___Note:__ Yet to be released changes appear here._
 
+## 1.1.0
+
+* `DEPS`: update to `diagram-js@15.1.0`
+
 ## 1.0.0
 
 * `FEAT`: enable grid per default ([#11](https://github.com/bpmn-io/diagram-js-grid/pull/11), )
