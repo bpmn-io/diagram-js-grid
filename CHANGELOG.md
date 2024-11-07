@@ -8,7 +8,7 @@ ___Note:__ Yet to be released changes appear here._
 
 ## 1.1.0
 
-* `DEPS`: update to `diagram-js@15.1.0`
+* `FEAT`: support `diagram-js@15.1.0`
 
 ## 1.0.0
 
