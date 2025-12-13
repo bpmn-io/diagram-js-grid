@@ -51,7 +51,7 @@
     "webpack": "^5.104.1"
   },
   "dependencies": {
-    "min-dash": "^4.1.1",
+    "min-dash": "^5.0.0",
     "tiny-svg": "^3.0.1"
   },
   "files": [
