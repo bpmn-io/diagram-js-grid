@@ -1,3 +1,5 @@
+import { expect } from 'chai';
+
 import {
   attr as svgAttr
 } from 'min-dom';
