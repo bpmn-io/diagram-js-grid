@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 var singleStart = process.env.SINGLE_START;
 
 // configures browsers to run test against
