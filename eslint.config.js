@@ -3,14 +3,15 @@ import bpmnIoPlugin from 'eslint-plugin-bpmn-io';
 const files = {
   build: [
     '*.js',
-    '*.mjs',
-    'test/distro/karma.conf.js'
+    '*.cjs',
+    'test/distro/karma.conf.cjs'
   ],
   dist: [
     'dist'
   ],
   test: [
-    'test/**/*.js'
+    'test/**/*.js',
+    'test/**/*.cjs'
   ]
 };
 

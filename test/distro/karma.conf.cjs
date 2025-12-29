@@ -15,10 +15,10 @@ module.exports = function(karma) {
       'mocha'
     ],
 
-    files: [ '*Spec.js' ],
+    files: [ '*Spec.cjs' ],
 
     preprocessors: {
-      '*Spec.js': [ 'webpack' ]
+      '*Spec.cjs': [ 'webpack' ]
     },
 
     browsers,
