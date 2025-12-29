@@ -4,7 +4,6 @@
   "description": "A visual grid for diagram-js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "umd:main": "dist/diagram-grid.umd.js",
   "source": "lib/index.js",
   "scripts": {
     "all": "run-s lint test distro",
@@ -29,9 +28,6 @@
   "author": "Philipp Fromme",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^29.0.0",
-    "@rollup/plugin-node-resolve": "^16.0.3",
-    "@rollup/plugin-terser": "^0.4.4",
     "chai": "^6.2.2",
     "diagram-js": "^15.4.0",
     "eslint": "^9.39.2",
