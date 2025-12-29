@@ -1,6 +1,6 @@
 import semver from 'semver';
 
-export * from 'diagram-js/test/helper';
+export * from 'diagram-js/test/helper/index.js';
 
 /**
  * Execute test only if currently installed bpmn-js is of given version.

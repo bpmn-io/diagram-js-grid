@@ -9,21 +9,21 @@ import {
   getDiagramJS,
   insertCSS,
   inject
-} from '../TestHelper';
+} from '../TestHelper.js';
 
-import gridModule from '../../lib';
+import gridModule from '../../lib/index.js';
 
-import modelingModule from 'diagram-js/lib/features/modeling';
-import gridSnappingModule from 'diagram-js/lib/features/grid-snapping';
-import moveModule from 'diagram-js/lib/features/move';
-import moveCanvasModule from 'diagram-js/lib/navigation/movecanvas';
-import zoomScrollModule from 'diagram-js/lib/navigation/zoomscroll';
+import modelingModule from 'diagram-js/lib/features/modeling/index.js';
+import gridSnappingModule from 'diagram-js/lib/features/grid-snapping/index.js';
+import moveModule from 'diagram-js/lib/features/move/index.js';
+import moveCanvasModule from 'diagram-js/lib/navigation/movecanvas/index.js';
+import zoomScrollModule from 'diagram-js/lib/navigation/zoomscroll/index.js';
 
-import { getMid } from 'diagram-js/lib/layout/LayoutUtil';
+import { getMid } from 'diagram-js/lib/layout/LayoutUtil.js';
 
-import { GRID_DIMENSIONS } from '../../lib/Grid';
+import { GRID_DIMENSIONS } from '../../lib/Grid.js';
 
-import { SPACING } from 'diagram-js/lib/features/grid-snapping/GridUtil';
+import { SPACING } from 'diagram-js/lib/features/grid-snapping/GridUtil.js';
 
 import diagramCSS from 'diagram-js/assets/diagram-js.css';
 

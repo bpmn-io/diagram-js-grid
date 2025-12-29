@@ -10,12 +10,11 @@ export default [
   {
     input: srcEntry,
     output: [
-      { file: pkg.main, format: 'cjs', exports: 'default' },
-      { file: pkg.module, format: 'es', exports: 'default' }
+      { file: pkg.main, format: 'es', exports: 'default' }
     ],
     external: [
-      'diagram-js/lib/features/grid-snapping/GridUtil',
-      'diagram-js/lib/layout/LayoutUtil',
+      'diagram-js/lib/features/grid-snapping/GridUtil.js',
+      'diagram-js/lib/layout/LayoutUtil.js',
       'min-dom',
       'tiny-svg'
     ],
