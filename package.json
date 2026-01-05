@@ -29,6 +29,9 @@
     "diagram-js",
     "grid"
   ],
+  "engines": {
+    "node": ">= 20"
+  },
   "author": "Philipp Fromme",
   "license": "MIT",
   "devDependencies": {
