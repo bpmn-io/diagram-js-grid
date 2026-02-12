@@ -6,6 +6,10 @@ All notable changes to [diagram-js-grid](https://github.com/bpmn-io/diagram-js-g
 
 ___Note:__ Yet to be released changes appear here._
 
+## 2.0.1
+
+* `DEPS`: explicitly depend on `min-dom`
+
 ## 2.0.0
 
 * `DEPS`: update to `min-dash@5.0.0`
