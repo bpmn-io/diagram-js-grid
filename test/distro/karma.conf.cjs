@@ -5,11 +5,7 @@
 var browsers = (process.env.TEST_BROWSERS || 'ChromeHeadless').split(',');
 
 
-module.exports = async function(karma) {
-
-  // use puppeteer provided Chrome for testing
-  process.env.CHROME_BIN = await require('puppeteer').executablePath();
-
+module.exports = function(karma) {
   karma.set({
 
     frameworks: [
