@@ -21,6 +21,8 @@ module.exports = function(karma) {
       'test/spec/*Spec.js': [ 'webpack', 'env' ]
     },
 
+    reporters: [ 'tldr' ],
+
     browsers,
 
     autoWatch: false,
