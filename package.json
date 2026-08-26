@@ -47,12 +47,12 @@
     "karma-mocha": "^2.0.1",
     "karma-tldr-reporter": "^1.0.0",
     "karma-webpack": "^5.0.1",
-    "mocha": "^11.0.0",
+    "mocha": "^11.8.0",
     "mocha-test-container-support": "^0.2.0",
     "npm-run-all2": "^9.0.0",
     "rollup": "^4.62.4",
-    "semver": "^7.8.4",
-    "webpack": "^5.104.1"
+    "semver": "^7.8.5",
+    "webpack": "^5.109.2"
   },
   "dependencies": {
     "min-dash": "^5.0.0",
