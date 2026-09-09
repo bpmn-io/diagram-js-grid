@@ -30,7 +30,7 @@
     "grid"
   ],
   "engines": {
-    "node": ">= 20"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "author": "Philipp Fromme",
   "license": "MIT",
